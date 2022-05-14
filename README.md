@@ -8,4 +8,4 @@ Welcome to a guide for installing FLEXPART. Every source I used for help is list
 - guide for installing FLEXPART
 - example makefile 
 
-### feedback is always welcome! If you have any questions or concerns: jadaolynch@gmail.com
+### Feedback is always welcome! If you have any questions or concerns: jadaolynch@gmail.com
