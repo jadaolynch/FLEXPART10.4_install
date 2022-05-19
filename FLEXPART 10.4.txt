@@ -82,7 +82,7 @@ INSTALLING DEPENDENCIES
 sudo mkdir /user/local/jasper/
 unzip jasper-1.900.1.zip
 cd jasper-1.900.1
-CFLAGS="-fPIC" ./configure --prefix=/usr/local/jasper
+CFLAGS="-fPIC" ./configure --prefix=/usr/local/
 make
 make check
 make install
@@ -92,7 +92,7 @@ make install
 sudo mkdir /usr/local/grib_api/
 tar -xvzf grib_api-1.28.0-Source.tar.gz
 cd grib_api-1.28.0-Source
-./configure --prefix=/usr/local/grib_api --with-jasper=/usr/local/jasper
+./configure --prefix=/usr/local/grib_api --with-jasper=/usr/local/
 make
 make check
 make install
@@ -103,7 +103,7 @@ sudo mkdir /usr/local/eccodes/
 tar -xvzf eccodes-${v}-Source.tar.gz
 cd eccodes-${v}-Source
 mkdir build && cd build
-cmake -DCMAKE_INSTALL_PREFIX=/usr/local/eccodes /home/<user>/eccodes-${v}-Source
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local/ -DENABLE__JPG_LIBJASPER=ON /path/to/eccodes-${v}-Source
 make
 ctest
 make install
