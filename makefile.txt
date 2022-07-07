@@ -57,6 +57,7 @@ FLEXPART-SERIAL = FLEXPART
         INCPATH1  = ${ROOT_DIR}/eccodes/include
         INCPATH2  = ${ROOT_DIR}/jasper/include
         INCPATH3 = /include
+        # INCPATH4 = ${ROOT_DIR}/include 
 
         LIBPATH1 = ${ROOT_DIR}/eccodes/lib
         LIBPATH2 = ${ROOT_DIR}/jasper/lib
