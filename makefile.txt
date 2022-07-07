@@ -64,7 +64,7 @@ FLEXPART-SERIAL = FLEXPART
 
 ### Enable netCDF output?
 ifeq ($(ncf), yes)
-        NCOPT = -DUSE_NCF -lnetcdff -lnetcdf
+        NCOPT = -DUSE_NCF -lnetcdff #-lnetcdf
 else
         NCOPT = -UUSE_NCF
 endif
@@ -81,7 +81,7 @@ O_LEV_DBG = g # [0,g]
 
 ## LIBRARIES - comment out the one you're not using
 #LIBS = -lgrib_api_f90 -lgrib_api -lm -ljasper -lnetcdff
-LIBS = -leccodes_f90 -leccodes -lm -ljasper $(NCOPT) -lnetcdff
+LIBS = -leccodes_f90 -leccodes -lm -ljasper $(NCOPT)
 
 FFLAGS   = -I$(INCPATH1) -I$(INCPATH2) -I$(INCPATH3) -O$(O_LEV) -g -cpp -m64 -mcmodel=medium -fconvert=little-endian -frecord-marker=4 -fmessage-length=0 -flto=jobserver -O$(O_LEV) $(NCOPT) $(FUSER)  #-Warray-bounds -fcheck=all # -march=native
 
