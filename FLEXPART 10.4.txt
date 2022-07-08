@@ -146,9 +146,9 @@ tar -xf netcdf-c-${v}.tar.gz && cd netcdf-c-${v}/
 prefix="/usr/local/"
 echo "" >> ~/.bashrc
 echo "# NETCDF4 libraries for python" >> ~/.bashrc
-echo export NETCDF4_DIR=$prefix  >> ~/.bashrc
+echo export NCDIR=$prefix  >> ~/.bashrc
 CPPFLAGS=-I$HDF5_DIR/include LDFLAGS=-L$HDF5_DIR/lib \
-./configure --enable-netcdf-4 --enable-shared --enable-dap --prefix=$NETCDF4_DIR
+./configure --enable-netcdf-4 --enable-shared --enable-dap --prefix=$NCDIR
 make 
 make install
 
