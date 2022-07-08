@@ -79,7 +79,7 @@ INSTALLING DEPENDENCIES
 
 	1. THE JASPER LIBRARY:
 
-sudo mkdir /user/local/jasper/
+sudo mkdir /usr/local/jasper/
 unzip jasper-1.900.1.zip
 cd jasper-1.900.1
 CFLAGS="-fPIC" ./configure --prefix=/usr/local/
